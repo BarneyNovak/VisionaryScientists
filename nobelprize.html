@@ -1,0 +1,173 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Visionary Scientists</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap">
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Open Sans';
+            color: #f0f0f0;
+            background: #121212;
+        }
+
+        #header {
+            background: #1f1f1f;
+            padding: 20px;
+            color: #ffffff;
+            border-bottom: 2px solid #ffffff;
+        }
+
+        #header h1 a {
+            color: #ffffff;
+            text-decoration: none;
+        }
+
+        #nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        #nav ul li {
+            margin: 0 15px;
+        }
+
+        #nav ul li a {
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 5px 10px;
+        }
+
+        #nav ul li a:hover {
+            background: #333333;
+            border-radius: 5px;
+        }
+
+        #video-container {
+            position: relative;
+            width: 100%;
+            height: 500px;
+            overflow: hidden;
+        }
+
+        #video-container video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            position: absolute;
+            top: 0;
+            left: 0;
+            opacity: 0.7;
+        }
+
+        #quote {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: #ffffff;
+            font-size: 28px;
+            text-align: center;
+            width: 80%;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.7);
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+        }
+
+        #main {
+            padding: 50px 20px;
+            background: #1e1e1e;
+        }
+
+        #main p {
+            color: #d0d0d0;
+            line-height: 1.6;
+        }
+
+        #footer {
+            background: #1f1f1f;
+            color: #ffffff;
+            padding: 15px;
+            text-align: center;
+            border-top: 2px solid #ffffff;
+        }
+
+        #footer ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        #footer ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+    </style>
+</head>
+<body class="is-preload">
+
+    <!-- Wrapper -->
+    <div id="page-wrapper">
+
+        <!-- Navigation -->
+        <header id="header" class="alt">
+            <h1><a href="index.html">Visionary Scientists</a></h1>
+            <nav id="nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="nobelprize.html">Nobel Prize</a></li>
+                    <li><a href="chess.html">Chess</a></li>
+                    <li><a href="rubikscube.html">Rubik's Cube</a></li>
+                    <li><a href="conference.html">Conference</a></li>
+                    <li><a href="registration.html">Registration</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Video Background -->
+        <div id="video-container">
+            <video src="videos/7.mp4" autoplay loop muted></video>
+            <div id="quote">“One might argue that proper understanding of any social situation would require game-theoretic analysis." - Nobel Laureate: John Charles Harsanyi</div>
+        </div>
+
+        <!-- Main Content -->
+        <!-- <section id="main" class="container">
+            <h2>Welcome to the Visionary Scientists Conference</h2>
+            <p>I am pleased to announce that the third edition of the John von Neumann Series of pure and applied sciences will take place in fall 2024. This event will celebrate the profound influence of visionary scientists whose groundbreaking ideas have shaped the fields of mathematics, artificial intelligence, game theory, and beyond.</p>
+            <p>Each event has a different focus, and now the aim is to connect the areas where von Neumann has had a lasting impact with the art of play. We believe that creative games are an important tool to get the youngest generation interested in scientific questions. In this way, science and play are linked, and creative games play an important role in educating children and introducing them to the wonderful world of science.</p>
+            <p>The venue, Liberty Science Center, is the best place to achieve these goals because its mission is to inspire the next generation of scientists and engineers and engage learners of all ages in the power, promise, and sheer fun of science and technology. More than 750,000 students, teachers, and parents visit Liberty Science Center each year, and tens of thousands more participate in the center's off-site and online programs.</p>
+            <p>During the event, in addition to the scientific conference, interactive games will be presented just outside the conference room, where LSC visitors can take a look at chess, the Rubik's Cube, and other innovative games. This year marks the 50th anniversary of the Cube, the most popular puzzle game and “toy” in human history, which is a great case study of combinatorial mathematics and problem solving.</p>
+        </section> -->
+
+        <!-- Footer -->
+        <footer id="footer">
+            <ul class="copyright">
+                <li>&copy; John von Neumann Series. All rights reserved.</li>
+                <li>Design: Barnabas Novak</li>
+            </ul>
+        </footer>
+
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/jquery.dropotron.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+
+</body>
+</html>

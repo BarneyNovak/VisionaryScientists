@@ -1,171 +1,65 @@
 <!DOCTYPE HTML>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap">
-    <link rel="stylesheet" href="assets/css/main.css" />
-    <style>
-        body {
-            margin: 0;
-            font-family: 'Open Sans', Arial, sans-serif;
-            color: #f0f0f0;
-            background: #121212;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            text-align: center;
-            padding-top: 80px; /* Adjusted for fixed header */
-        }
 
-        #header {
-            background: #1f1f1f;
-            padding: 20px;
-            color: #ffffff;
-            border-bottom: 2px solid #ffffff;
-            width: 100%;
-            position: fixed;
-            top: 0;
-            left: 0;
-            z-index: 1000;
-        }
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 
-        #header h1 a {
-            color: #ffffff;
-            text-decoration: none;
-        }
+    <!-- Custom Styles CSS -->
+    <link rel="stylesheet" href="assets/css/styles.css">
 
-        #nav ul {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-            display: flex;
-            justify-content: center;
-        }
-
-        #nav ul li {
-            margin: 0 15px;
-        }
-
-        #nav ul li a {
-            color: #ffffff;
-            text-decoration: none;
-            font-weight: bold;
-            padding: 5px 10px;
-        }
-
-        #nav ul li a:hover {
-            background: #333333;
-            border-radius: 5px;
-        }
-
-        #contact-container {
-            width: 50vw; 
-            max-width: 500px; 
-            margin: 0 auto;
-            box-sizing: border-box; 
-            padding: 0 20px; 
-        }
-
-        #contact-container h1 {
-            font-size: 36px;
-            color: #ffffff;
-            margin-bottom: 30px;
-        }
-
-        .contact-item {
-            display: flex;
-            align-items: center;
-            background: #1e1e1e;
-            padding: 15px;
-            border-radius: 5px;
-            margin-bottom: 15px;
-            transition: background 0.3s;
-        }
-
-        .contact-item:hover {
-            background: #333333;
-        }
-
-        .contact-item p {
-            color: #d0d0d0;
-            margin: 0;
-            flex: 1;
-            font-size: 18px;
-            text-align: left;
-        }
-
-        .contact-item a {
-            display: flex;
-            align-items: center;
-        }
-
-        .contact-item img {
-            width: 32px;
-            height: 32px;
-            margin-left: 15px;
-        }
-    </style>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
-<body class="is-preload">
-
-    <!-- Wrapper -->
-    <div id="page-wrapper">
-
-        <!-- Navigation -->
-        <header id="header" class="alt">
+<body>
+    <!-- Navigation -->
+    <header id="header" class="alt">
+        <div class="container">
             <h1><a href="index.html">Visionary Scientists</a></h1>
             <nav id="nav">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="nobelprize.html">Nobel Prize</a></li>
-                    <li><a href="chess.html">Chess</a></li>
-                    <li><a href="rubikscube.html">Rubik's Cube</a></li>
-                    <li><a href="conference.html">Conference</a></li>
-                    <li><a href="registration.html">Registration</a></li>
-                    <li><a href="gallery.html">Gallery</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+                <ul class="nav justify-content-center">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="nobelprize.html">Nobel Prize</a></li>
+                    <li class="nav-item"><a class="nav-link" href="chess.html">Chess</a></li>
+                    <li class="nav-item"><a class="nav-link" href="rubikscube.html">Rubik's Cube</a></li>
+                    <li class="nav-item"><a class="nav-link" href="conference.html">Conference</a></li>
+                    <li class="nav-item"><a class="nav-link" href="registration.html">Registration</a></li>
+                    <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
                 </ul>
             </nav>
-        </header>
-
-        <!-- Contact Container -->
-        <div id="contact-container">
-            <h1>Contact</h1>
-            <div class="contact-item">
-                <p>Tamas Novak</p>
-                <a href="https://www.linkedin.com/in/tamas-novak-820b3364/" target="_blank">
-                    <img src="images/LinkedIn_icon_circle.svg.png" alt="Tamas Novak LinkedIn Profile">
-                </a>
-            </div>
-            <div class="contact-item">
-                <p>Barnabas Novak</p>
-                <a href="https://www.linkedin.com/in/barnabas-novak/" target="_blank">
-                    <img src="images/LinkedIn_icon_circle.svg.png" alt="Barnabas Novak LinkedIn Profile">
-                </a>
-            </div>
-            <div class="contact-item">
-                <p>Zsuzsanna Lantos</p>
-                <a href="https://www.linkedin.com/in/zsuzsanna-lantos-902105153/" target="_blank">
-                    <img src="images/LinkedIn_icon_circle.svg.png" alt="Zsuzsanna Lantos LinkedIn Profile">
-                </a>
-            </div>
         </div>
+    </header>
 
+    <!-- Contact Container -->
+    <div id="contact-container" class="container mt-5">
+        <h1>Contact</h1>
+        <div class="contact-item d-flex justify-content-between align-items-center">
+            <p>Tamas Novak</p>
+            <a href="https://www.linkedin.com/in/tamas-novak-820b3364/" target="_blank">
+                <img src="images/LinkedIn_icon_circle.svg.png" alt="Tamas Novak LinkedIn Profile">
+            </a>
+        </div>
+        <div class="contact-item d-flex justify-content-between align-items-center">
+            <p>Barnabas Novak</p>
+            <a href="https://www.linkedin.com/in/barnabas-novak/" target="_blank">
+                <img src="images/LinkedIn_icon_circle.svg.png" alt="Barnabas Novak LinkedIn Profile">
+            </a>
+        </div>
+        <div class="contact-item d-flex justify-content-between align-items-center">
+            <p>Zsuzsanna Lantos</p>
+            <a href="https://www.linkedin.com/in/zsuzsanna-lantos-902105153/" target="_blank">
+                <img src="images/LinkedIn_icon_circle.svg.png" alt="Zsuzsanna Lantos LinkedIn Profile">
+            </a>
+        </div>
     </div>
 
-    <!-- Scripts -->
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/jquery.scrolly.min.js"></script>
-    <script src="assets/js/jquery.dropotron.min.js"></script>
-    <script src="assets/js/jquery.scrollex.min.js"></script>
-    <script src="assets/js/browser.min.js"></script>
-    <script src="assets/js/breakpoints.min.js"></script>
-    <script src="assets/js/util.js"></script>
-    <script src="assets/js/main.js"></script>
-
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>

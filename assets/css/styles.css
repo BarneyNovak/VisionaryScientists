@@ -1,0 +1,221 @@
+body {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    color: #f0f0f0;
+    background: rgb(5, 0, 50);
+}
+
+#header {
+    background: #1f1f1f;
+    padding: 20px;
+    color: #ffffff;
+    border-bottom: 2px solid #ffffff;
+    text-align: center; /* Center content horizontally */
+}
+
+#header h1 {
+    margin: 0; /* Remove default margin */
+}
+
+#header h1 a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 2rem; /* Adjust font size as needed */
+}
+
+#nav {
+    margin-top: 10px; /* Add margin to separate the nav from the title */
+}
+
+#nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+#nav ul li {
+    margin: 0 15px;
+}
+
+#nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 10px;
+}
+
+#nav ul li a:hover {
+    background: #333333;
+    border-radius: 5px;
+}
+
+#video-container {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+}
+
+#video-container video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.7; 
+    border-bottom: 1px solid #ffffff;   
+}
+
+#quote {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+    font-size: 28px;
+    text-align: center;
+    width: 80%;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+#main {
+    padding: 50px 20px;
+    background: #1e1e1e;
+}
+
+#main p {
+    color: #d0d0d0;
+    line-height: 1.6;
+}
+
+#footer {
+    background: #1f1f1f;
+    color: #ffffff;
+    padding: 15px;
+    text-align: center;
+    border-top: 2px solid #ffffff;
+}
+
+#footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#footer ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+#contact-container {
+    width: 50vw; 
+    max-width: 500px; 
+    margin: 0 auto;
+    box-sizing: border-box; 
+    padding: 0 20px; 
+}
+
+#contact-container h1 {
+    font-size: 36px;
+    color: #ffffff;
+    margin-bottom: 30px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    background: #1e1e1e;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    transition: background 0.3s;
+}
+
+.contact-item:hover {
+    background: #333333;
+}
+
+.contact-item p {
+    color: #d0d0d0;
+    margin: 0;
+    flex: 1;
+    font-size: 18px;
+    text-align: left;
+}
+
+.contact-item a {
+    display: flex;
+    align-items: center;
+}
+
+.contact-item img {
+    width: 32px;
+    height: 32px;
+    margin-left: 15px;
+}
+
+nav {
+    background-color: #333;
+    padding: 10px;
+  }
+  
+  .menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+  }
+  
+  .menu-item {
+    position: relative;
+  }
+  
+  .conference-link {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+  }
+  
+  .conference-link:hover {
+    background-color: #555;
+  }
+  
+  .dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #444;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    min-width: 150px;
+  }
+  
+  .dropdown li {
+    border-bottom: 1px solid #555;
+  }
+  
+  .dropdown li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+  }
+  
+  .dropdown li a:hover {
+    background-color: #666;
+  }
+  
+  /* Show dropdown when hovering over the conference link */
+  .menu-item:hover .dropdown {
+    display: block;
+  }
+  

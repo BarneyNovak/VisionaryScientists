@@ -7,6 +7,36 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/styles.css" />
+    <style>
+        .image-container {
+            display: flex;
+            justify-content: space-between;
+            gap: 10px; 
+        }
+        .image-wrapper {
+            flex: 1;
+            text-align: center;
+        }
+        .image-wrapper img {
+            width: 100%;
+            height: auto;
+            max-width: 100px;
+            max-height: 100px; 
+            object-fit: cover;
+        }
+        .image-wrapper img:last-of-type {
+            max-width: none;
+            max-height: none; 
+            width: 80%; 
+            height: auto; 
+            display: block;
+            margin: 0 auto; 
+            padding-top: 30px;
+        }
+        .caption {
+            margin-top: 5px;
+        }
+    </style>
 </head>
 <body class="is-preload">
 
@@ -41,23 +71,35 @@
     <!-- Video Background -->
     <div id="video-container">
         <video src="videos/7.mp4" autoplay loop muted></video>
-        <div id="quote">“One might argue that proper understanding of any social situation would require game-theoretic analysis." - Nobel Laureate: John Charles Harsanyi</div>
+        <div id="quote">“Game theory is a theory of strategic interaction.” - John C. Harsanyi</div>
     </div>
 
     <!-- Main Content -->
     <section id="main" class="container">
         <h2></h2>
-        <p>Thirty years ago, in 1994, two Hungarian-born scientists received their Nobel Prizes in the United States. With this conference and the side events, we would like to honor their achievements and at this page, we put information about their work and scientific legacy.</p>
+        <p>Thirty years ago, in 1994, two Hungarian-born scientists received their Nobel Prizes in the United States.
+            John C. Harsanyi received the Nobel Prize in Economics for his work on game theory and its application to economics. He showed how games with incomplete information can be analyzed and thus provided the theoretical basis for a vibrant field of research – information economics. He is also known for his research on utilitarian ethics and is considered one of the most important representatives of “rule utilitarianism”.
+            George Andrew Olah was awarded the Nobel Prize in Chemistry for his contribution to carbocation chemistry. Chemical reactions in which molecules of atoms collide and form new compounds are among the fundamental processes of nature. Carbocations are electrically charged molecules in which the charge is concentrated on a carbon atom. They play an important role as intermediates in chemical reactions and have a very short lifespan. In the early 1960s, George Olah used very strong acids to generate carbocations in solution with lifetimes long enough to study them
+            With this conference and the side events we would like to honor their achievements and provide information about their work and scientific legacy on this page.
+            </p>
         <div class="image-container">
             <div class="image-wrapper">
-                <img src="images/harsanyi1.png" alt="Scientist 1">
-                <div class="caption">John C. Harsanyi – Photo gallery. Nobel Prize Outreach AB 2024. <a href="https://www.nobelprize.org/prizes/economic-sciences/1994/harsanyi/photo-gallery/" target="_blank">Link</a></div>
-            </div>
-            <div class="image-wrapper">
-                <img src="images/harsanyi2.png" alt="Scientist 2">
+                <img src="images/harsanyi2.png" alt="Harsanyi">
                 <div class="caption">John Harsanyi <a href="https://www.biografiasyvidas.com/biografia/h/fotos/harsanyi_john.jpg" target="_blank">Link</a></div>
             </div>
+            <div class="image-wrapper">
+                <img src="images/Olah.jpg" alt="Olah">
+                <div class="caption">George Olah</div>
+            </div>
         </div>
+        <div class="image-wrapper">
+            <img src="images/harsanyi1.png" alt="Olah and Harsanyi on one image">
+            <div class="caption">John C. Harsanyi, first row, right
+                George Andrew Olah, second row, third from right
+                 <a href="https://www.nobelprize.org/prizes/economic-sciences/1994/harsanyi/photo-gallery/" target="_blank">Link</a></div>
+        </div>
+
+
 
         <!-- PDF Embeds -->
         <div class="pdf-container">

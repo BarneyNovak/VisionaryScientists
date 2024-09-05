@@ -1,7 +1,7 @@
 body {
     margin: 0;
     font-family: 'Open Sans', sans-serif;
-    color: #f0f0f0;
+    color: #ffffff; /* Default text color */
     background: rgb(5, 0, 50);
 }
 
@@ -19,7 +19,7 @@ body {
 }
 
 #header h1 a {
-    color: #ffffff;
+    color: #ffffff; /* Header link color */
     text-decoration: none;
     font-size: 2rem; 
 }
@@ -41,7 +41,7 @@ body {
 }
 
 #nav ul li a {
-    color: #ffffff;
+    color: #d0d0d0;
     text-decoration: none;
     font-weight: bold;
     padding: 5px 10px;
@@ -54,34 +54,27 @@ body {
 
 .image-container {
     display: flex;
-    justify-content: space-between;
-    gap: 10px; 
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
 }
+
 .image-wrapper {
-    flex: 1;
     text-align: center;
 }
+
 .image-wrapper img {
-    width: 100%;
-    height: auto;
-    max-width: 100px;
-    max-height: 100px; 
-    object-fit: cover;
+    max-width: 100%;
+    height: 400px;
 }
-.image-wrapper img:last-of-type {
-    max-width: none;
-    max-height: none; 
-    width: 80%; 
-    height: auto; 
-    display: block;
-    margin: 0 auto; 
-    padding-top: 30px;
-}
+
 .caption {
+    font-size: 0.8em;
+    color: #ffffff; 
     margin-top: 5px;
-    color: white; 
     margin-bottom: 50px;    
 }
+
 .pdf-container iframe {
     width: 100%;
     height: 500px;
@@ -89,14 +82,16 @@ body {
 }
 
 p {
+    color: #d0d0d0; 
     line-height: 1.9; 
     margin-bottom: 30px; 
 }
+
 h4 {
+    color: #ffffff; 
     margin-bottom: 20px; 
     font-weight: bold;
 }
-
 
 #video-container {
     position: relative;
@@ -121,7 +116,7 @@ h4 {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: #ffffff;
+    color: #ffffff; 
     font-size: 28px;
     text-align: center;
     width: 80%;
@@ -138,12 +133,20 @@ h4 {
 
 #main p {
     color: #d0d0d0;
-    line-height: 1.6;
+}
+
+ul {
+    color: #d0d0d0; 
+}
+
+ul li {
+    color: #d0d0d0;
+    margin-bottom: 10px;
 }
 
 #footer {
     background: #1f1f1f;
-    color: #ffffff;
+    color: #ffffff; /* Footer text color */
     padding: 15px;
     text-align: center;
     border-top: 2px solid #ffffff;
@@ -170,7 +173,7 @@ h4 {
 
 #contact-container h1 {
     font-size: 36px;
-    color: #ffffff;
+    color: #ffffff; /* Contact container header color */
     margin-bottom: 30px;
 }
 
@@ -189,7 +192,7 @@ h4 {
 }
 
 .contact-item p {
-    color: #d0d0d0;
+    color: #d0d0d0; 
     margin: 0;
     flex: 1;
     font-size: 18px;
@@ -224,39 +227,11 @@ h4 {
 
 .nav-item .dropdown-menu a {
     padding: 0.5rem 1rem;
-    color: #343a40;
+    color: #ffffff; 
     text-decoration: none;
     display: block;
 }
 
 .nav-item .dropdown-menu a:hover {
-    background-color: #f8f9fa;
-}
-
-.image-container {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    margin-top: 20px;
-}
-.image-wrapper {
-    text-align: center;
-}
-.image-container img {
-    max-width: 100%;
-    height: auto;
-}
-.caption {
-    font-size: 0.8em;
-    color: #666;
-    margin-top: 5px;
-}
-.pdf-container {
-    margin-top: 20px;
-    text-align: center;
-}
-.pdf-container iframe {
-    width: 100%;
-    height: 600px;
-    border: none;
+    background-color: #333333;
 }

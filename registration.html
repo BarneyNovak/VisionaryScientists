@@ -1,16 +1,23 @@
 <!DOCTYPE HTML>
-<html>
+<html lang="en">
 <head>
-    <title>Visionary Scientists</title>
-     <meta charset="utf-8" />
+    <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <meta name="description" content="Join the Visionary Scientists at the 2024 Neumann Series Conference at Liberty Science Center. Celebrate mathematics, AI, game theory, and more." />
     <meta name="keywords" content="Visionary Scientists, visionary science, VISIONARY SCIENCE, visionary sciences, visionaryscientists, VISIONARYSCIENTISTS, neumannseries, libertysciencecenterhostsvisionaryscientists, Liberty Science Center, Tamas Novak, Barnabas Novak, John von Neumann, game theory, chess, Rubik's Cube" />
     <meta name="author" content="Tamas Novak, Barnabas Novak" />
+    <title>Visionary Scientists</title>
+
+    <!-- Google Fonts -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap">
+    
+    <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    
+    <!-- Custom Styles -->
     <link rel="stylesheet" href="assets/css/styles.css" />
-    <!-- Google tag (gtag.js) -->
+
+    <!-- Google Tag Manager -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-LW2LMRQT2Z"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
@@ -18,6 +25,26 @@
         gtag('js', new Date());
         gtag('config', 'G-LW2LMRQT2Z');
     </script>
+
+    <style>
+        /* Make iframe responsive */
+        .responsive-iframe {
+            position: relative;
+            width: 100%;
+            height: 0;
+            padding-bottom: 56.25%; /* 16:9 aspect ratio */
+            overflow: hidden;
+        }
+
+        .responsive-iframe iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+    </style>
 </head>
 
 <body class="is-preload">
@@ -51,10 +78,14 @@
             </nav>
         </header>
 
+        <!-- Main Section -->
         <section id="main" class="container">
-            <h1 style="text-align: center;">Coming Soon!</h1>
+            <div class="responsive-iframe">
+                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSf78OICWwENkFzg5H9NqqA43N9jSdz2J7mv7j8L3aYwcy1yVA/viewform" frameborder="0" marginheight="0" marginwidth="0">
+                    Loading…
+                </iframe>
+            </div>
         </section>
-        
 
     </div>
 
@@ -67,6 +98,6 @@
     <script src="assets/js/breakpoints.min.js"></script>
     <script src="assets/js/util.js"></script>
     <script src="assets/js/main.js"></script>
-
 </body>
 </html>
+

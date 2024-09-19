@@ -51,67 +51,72 @@
             </nav>
         </header>
 
+
         <!-- Video Background -->
-        <div id="video-container">
-            <video src="videos/7.mp4" autoplay loop muted></video>
-            <div id="quote">“Game theory is a theory of strategic interaction.” - John C. Harsanyi</div>
+        <div id="video-container" class="position-relative">
+            <video src="videos/7.mp4" autoplay loop muted class="w-100"></video>
+            <div id="quote" class="position-absolute text-center text-white" style="bottom: 10%; left: 50%; transform: translateX(-50%);">
+                “Game theory is a theory of strategic interaction.” - John C. Harsanyi
+            </div>
         </div>
 
         <!-- Main Content -->
         <section id="main" class="container">
-            <h4>1994 - An exceptional year for the Hungarian Science</h4>
+            <div class="content-section">
+            <h4 class="text-center">1994 - An exceptional year for the Hungarian Science</h4>
             <p>Thirty years ago, in 1994, two Hungarian-born scientists received their Nobel Prizes in the United States.
                 John C. Harsanyi received the Nobel Prize in Economics for his work on game theory and its application to economics. He showed how games with incomplete information can be analyzed and thus provided the theoretical basis for a vibrant field of research – information economics. He is also known for his research on utilitarian ethics and is considered one of the most important representatives of “rule utilitarianism”.
                 George Andrew Olah was awarded the Nobel Prize in Chemistry for his contribution to carbocation chemistry. Chemical reactions in which molecules of atoms collide and form new compounds are among the fundamental processes of nature. Carbocations are electrically charged molecules in which the charge is concentrated on a carbon atom. They play an important role as intermediates in chemical reactions and have a very short lifespan. In the early 1960s, George Olah used very strong acids to generate carbocations in solution with lifetimes long enough to study them
                 With this conference and the side events we would like to honor their achievements and provide information about their work and scientific legacy on this page.
             </p>
 
-            <div class="image-container">
-                <div class="image-wrapper">
-                    <img src="images/harsanyi2.png" alt="John Harsnayi, Nobel Prize Winner, Neumann Series conference, third conference as Visionaries of Sciences, Visionary Scientists at Neumann Conference 2024 ">
-                    <div class="caption">John Harsanyi <a href="https://www.biografiasyvidas.com/biografia/h/fotos/harsanyi_john.jpg" target="_blank">Link</a></div>
+            <div class="row mt-4">
+                <div class="col-md-6 mb-3">
+                    <div class="image-wrapper">
+                        <img src="images/harsanyi2.png" class="img-fluid" alt="John Harsanyi">
+                        <div class="caption text-center">John Harsanyi <a href="https://www.biografiasyvidas.com/biografia/h/fotos/harsanyi_john.jpg" target="_blank">Link</a></div>
+                    </div>
                 </div>
-                <div class="image-wrapper">
-                    <img src="images/olah2.png" alt="George Olah, Nobel Prize Winner, Neumann Series conference, third conference as Visionaries of Sciences, Visionary Scientists at Neumann Conference 2024">
-                    <div class="caption">George Olah</div>
+                <div class="col-md-6 mb-3">
+                    <div class="image-wrapper">
+                        <img src="images/olah2.png" class="img-fluid" alt="George Olah">
+                        <div class="caption text-center">George Olah</div>
+                    </div>
                 </div>
             </div>
 
-            <div class="image-wrapper">
-                <img src="images/harsanyi1.png" alt="Olah and Harsanyi on one image">
+            <div class="image-wrapper text-center">
+                <img src="images/harsanyi1.png" class="img-fluid" alt="Olah and Harsanyi on one image">
                 <div class="caption">John C. Harsanyi, first row, right George Andrew Olah, second row, third from right <a href="https://www.nobelprize.org/prizes/economic-sciences/1994/harsanyi/photo-gallery/" target="_blank">Link</a></div>
             </div>
 
             <!-- PDF Embeds -->
-            <div class="pdf-container">
+            <div class="pdf-container mt-5">
                 <h3>A short biography of John Harsanyi</h3>
-                <iframe src="docs/johnharsanyi.pdf" title="John Harsanyi PDF"></iframe>
+                <iframe src="docs/johnharsanyi.pdf" class="w-100" style="height: 700px;" title="John Harsanyi PDF"></iframe>
                 <h3>John Harsanyi - Nobel lecture</h3>
-                <iframe src="docs/harsanyi-lecture.pdf" title="John Harsanyi Lecture PDF"></iframe>
+                <iframe src="docs/harsanyi-lecture.pdf" class="w-100" style="height: 700px;" title="John Harsanyi Lecture PDF"></iframe>
                 <h3>A short biography of George Olah</h3>
-                <iframe src="docs/georgeolah.pdf" title="George Olah PDF"></iframe>
+                <iframe src="docs/georgeolah.pdf" class="w-100" style="height: 700px;" title="George Olah PDF"></iframe>
                 <h3>George Olah - Nobel lecture</h3>
-                <iframe src="docs/olah-lecture.pdf" title="George Olah Lecture PDF"></iframe>
+                <iframe src="docs/olah-lecture.pdf" class="w-100" style="height: 700px;" title="George Olah Lecture PDF"></iframe>
             </div>
         </section>
 
         <!-- Footer -->
-        <footer id="footer">
-            <ul class="copyright">
-                <li>&copy; John von Neumann Series. All rights reserved.</li>
-                <li>Design: Barnabas Novak</li>
-            </ul>
+        <footer id="footer" class="py-3 text-center">
+            <div class="container">
+                <ul class="list-inline">
+                    <li class="list-inline-item">&copy; John von Neumann Series. All rights reserved.</li>
+                    <li class="list-inline-item">Design: Barnabas Novak</li>
+                </ul>
+            </div>
         </footer>
 
         <!-- Scripts -->
-        <script src="assets/js/jquery.min.js"></script>
-        <script src="assets/js/jquery.scrolly.min.js"></script>
-        <script src="assets/js/jquery.dropotron.min.js"></script>
-        <script src="assets/js/jquery.scrollex.min.js"></script>
-        <script src="assets/js/browser.min.js"></script>
-        <script src="assets/js/breakpoints.min.js"></script>
-        <script src="assets/js/util.js"></script>
-        <script src="assets/js/main.js"></script>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
     </body>
 </html>

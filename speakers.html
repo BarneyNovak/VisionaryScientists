@@ -18,8 +18,103 @@
         gtag('js', new Date());
         gtag('config', 'G-LW2LMRQT2Z');
     </script>
-</head>
+    </head>
 
+
+    <style>
+        /* Container for all flashcards */
+        .flashcard-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        /* Individual card styling */
+        .card {
+            background-color: rgb(40, 40, 40); /* Set card background color */
+            margin: 15px;
+            padding: 0; /* Remove padding to allow full container use */
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 45%; /* Two cards per row */
+            position: relative;
+            perspective: 1000px; /* For 3D flip effect */
+            cursor: pointer; /* Makes card clickable */
+            height: 350px; /* Set fixed height for each card */
+        }
+
+        /* Inner container for flipping */
+        .flip-card-inner {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            transition: transform 0.6s;
+            transform-style: preserve-3d;
+        }
+
+        /* Front and back of the card */
+        .card-front, .card-back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start; /* Align items at the top */
+            align-items: center;
+            padding: 0; /* Remove padding */
+            border-radius: 10px;
+        }
+
+        /* Back styling */
+        .card-back {
+            transform: rotateY(180deg);
+            background-color: rgb(40, 40, 40);
+            color: white;
+        }
+
+        /* Card flipping on click */
+        .flipped .flip-card-inner {
+            transform: rotateY(180deg);
+        }
+
+        /* Image styling */
+        .speaker-img {
+            width: 200px; /* Increase image size */
+            height: 200px; /* Increase image size */
+            border-radius: 50%;
+            margin-bottom: 0;
+            margin-top: 50px; /* Remove margin */
+        }
+
+        /* Title and description */
+        .card-title {
+            font-size: 1.2rem; /* Reduce font size */
+            font-weight: 600;
+            color: white;
+            margin-top: 10px;
+            text-align: center; /* Center title */
+        }
+
+        .card-text {
+            font-size: 0.7rem; /* Reduce font size */
+            margin: 0; /* Remove margin */
+            text-align: justify; /* Justify text */
+            color: white;
+            width: 100%; /* Full width */
+            overflow: hidden; /* Hide overflow */
+            text-overflow: ellipsis; /* Add ellipsis for overflow text */
+            white-space: normal; /* Allow text to wrap */
+        }
+
+        /* Adjust card layout for smaller screens */
+        @media (max-width: 768px) {
+            .card {
+                width: 100%; /* Full width on small screens */
+            }
+        }
+
+    </style>
 <body class="is-preload">
 
     <!-- Wrapper -->
@@ -51,9 +146,280 @@
             </nav>
         </header>
 
+    <!-- Wrapper -->
+    <div id="page-wrapper">
+
+        <!-- Main content -->
         <section id="main" class="container">
-            <h1 style="text-align: center;">Coming Soon!</h1>
+            <h1 align="center">Meet Our Speakers!</h1>
+            <div class="flashcard-container">
+                
+
+
+                <!-- Speaker 1 -->
+                <div class="card flashcard" id="speaker11" onclick="flipCard('speaker1')">
+                    <div class="flip-card-inner">
+                        <div class="card-front">
+                            <img src="images/erdi.jpg" alt="Erdi, Peter" class="speaker-img">
+                            <div class="card-body">
+                                <h3 class="card-title">Erdi, Peter</h3>
+                            </div>
+                        </div>
+                        <div class="card-back">
+                            <div class="card-body">
+                                <p class="card-text">Péter Érdi has served since 2002 as the Henry Luce Professor of Complex Systems Studies at Kalamazoo College in Kalamazoo, Michigan, where he teaches interdisciplinary classes and is cross-appointed in the physics and psychology departments. Péter Érdi grew up in Budapest, now an emeritus research professor at the Wigner Research Centre for Physics. Érdi served as the Editor-in-Chief of the Elsevier journal Cognitive Systems Research and vice-president of the International Neural Network Society. He is a founding director of a study abroad program, the Budapest Semester in Cognitive Science, which takes international students to Budapest for a semester. Péter Érdi has written well-accepted books published by Princeton University Press, MIT Press, and Springer. The book RANKING: The Unwritten Rules of the Social Game We All Play (Oxford University Press, 2020) has been translated into Chinese (with both simple and complex characters), German, Hungarian, Japanese, and Korean.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+
+                <!-- Speaker 2 -->
+                <div class="card flashcard" id="speaker2" onclick="flipCard('speaker2')">
+                    <div class="flip-card-inner">
+                        <div class="card-front">
+                            <img src="images/Hoffman, Paul.jpg" alt="Hoffman, Paul" class="speaker-img">
+                            <div class="card-body">
+                                <h3 class="card-title">Hoffman, Paul</h3>
+                            </div>
+                        </div>
+                        <div class="card-back">
+                            <div class="card-body">
+                                <p class="card-text"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Speaker 3 -->
+                <div class="card flashcard" id="speaker3" onclick="flipCard('speaker3')">
+                    <div class="flip-card-inner">
+                        <div class="card-front">
+                            <img src="images/jakab.png" alt="Jakab, Roland" class="speaker-img">
+                            <div class="card-body">
+                                <h3 class="card-title">Jakab, Roland</h3>
+                            </div>
+                        </div>
+                        <div class="card-back">
+                            <div class="card-body">
+                                <p class="card-text">Roland Jakab is the Chief Executive Officer of HUN-REN (Hungarian Research
+                                    Network). He started his professional career in 2000, joining Ericsson Hungary Ltd.,
+                                    where he was later appointed Head of Strategy for the Central Europe region,
+                                    covering eight countries. In his professional corporate activities, he has played a
+                                    leading role in the introduction of several technological innovations (3G, 4G, 5G) and
+                                    the dissemination of cutting-edge research and development in Hungary. Currently
+                                    he chairs several professional organisations: President of the Artificial Intelligence
+                                    Coalition, Chairman of the Hungarian European Business Council (HEBC), President
+                                    of the Swedish Chamber of Commerce in Hungary, President of BME`s Supporters
+                                    and Friends Association, Founding Vice President of the Alliance for the Future
+                                    Engineers, Board member of the 5G Coalition, Member of the Cooperative Doctoral
+                                    Collegium, Member of the National Advisory Committee of National Laboratories.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Speaker 4 -->
+                <div class="card flashcard" id="Speaker4" onclick="flipCard('Speaker4')">
+                    <div class="flip-card-inner">
+                        <div class="card-front">
+                            <img src="images/image.png" alt="Balázs Klein" class="speaker-img">
+                            <div class="card-body">
+                                <h3 class="card-title">Klein, Balazs</h3>
+                            </div>
+                        </div>
+                        <div class="card-back">
+                            <div class="card-body">
+                                <p class="card-text">Balázs Klein has a Masters degree in law and psychology, and a PhD in economics. He currently researches, develops and distributes computerised online aptitude tests and talent identification tools within his own company (Testar Ltd.). Tens of thousands of the novel online adaptive ability tests he developed are administered worldwide each year with adults and children, both in the educational and in the competitive sphere. In addition to his scientific work, he also works as a person-centered psychologist in individual and group settings.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Speaker 5 -->
+                <div class="card flashcard" id="speaker5" onclick="flipCard('speaker5')">
+                    <div class="flip-card-inner">
+                        <div class="card-front">
+                            <img src="images/Kokenyesi, Imre.jpeg" alt="Kokenyesi, Imre" class="speaker-img">
+                            <div class="card-body">
+                                <h3 class="card-title">Kokenyesi, Imre</h3>
+                            </div>
+                        </div>
+                        <div class="card-back">
+                            <div class="card-body">
+                                <p class="card-text"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                 <!-- Speaker 6 -->
+                 <div class="card flashcard" id="speaker6" onclick="flipCard('speaker6')">
+                    <div class="flip-card-inner">
+                        <div class="card-front">
+                            <img src="images/Lawrence, Cindy.jpg" alt="Lawrence, Cindy" class="speaker-img">
+                            <div class="card-body">
+                                <h3 class="card-title">Lawrence, Cindy</h3>
+                            </div>
+                        </div>
+                        <div class="card-back">
+                            <div class="card-body">
+                                <p class="card-text"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Speaker 7 -->
+                <div class="card flashcard" id="speaker7" onclick="flipCard('speaker7')">
+                    <div class="flip-card-inner">
+                        <div class="card-front">
+                            <img src="images/nzs kép.jpg" alt="Nemeskeri Zsolt" class="speaker-img">
+                            <div class="card-body">
+                                <h3 class="card-title">Nemeskeri, Zsolt</h3>
+                            </div>
+                        </div>
+                        <div class="card-back">
+                            <div class="card-body">
+                                <p class="card-text">Zsolt Nemeskeri is a prominent academic leader and researcher with a deep
+                                    expertise in cultural and social sciences. He currently holds the position of full
+                                    professor and Director at the Institute of Cultural and Social Sciences, Faculty of
+                                    Cultural Sciences, Teacher Training, and Regional Development at the University of
+                                    Pécs, Hungary. In addition, he is also a full professor at Gál Ferenc University,
+                                    Hungary. Dr. Nemeskéri has made substantial contributions to the academic
+                                    community through his prolific publication record, which includes over 350 scientific
+                                    papers. His work has garnered significant recognition, evidenced by over 500
+                                    independent citations and several prestigious awards, including the R. Wayne Pace
+                                    HRD Book of the Year Award and the Hungarian Innovation Award (for the Dienes
+                                    MathLab innovation). His intellectual contributions are complemented by his active
+                                    involvement in academic governance, including memberships in several editorial
+                                    boards and scientific committees, such as the Hungarian Academy of Sciences.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Speaker 8 -->
+                <div class="card flashcard" id="speaker8" onclick="flipCard('speaker8')">
+                    <div class="flip-card-inner">
+                        <div class="card-front">
+                            <img src="images/missing.png" alt="Nemeth, Roland" class="speaker-img">
+                            <div class="card-body">
+                                <h3 class="card-title">Nemeth, Roland</h3>
+                            </div>
+                        </div>
+                        <div class="card-back">
+                            <div class="card-body">
+                                <p class="card-text"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                 <!-- Speaker 9 -->
+                 <div class="card flashcard" id="speaker9" onclick="flipCard('speaker9')">
+                    <div class="flip-card-inner">
+                        <div class="card-front">
+                            <img src="images/missing.png" alt="Polgar, Judit" class="speaker-img">
+                            <div class="card-body">
+                                <h3 class="card-title">Polgar, Judit</h3>
+                            </div>
+                        </div>
+                        <div class="card-back">
+                            <div class="card-body">
+                                <p class="card-text"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Speaker 10 -->
+                <div class="card flashcard" id="speaker10" onclick="flipCard('speaker10')">
+                    <div class="flip-card-inner">
+                        <div class="card-front">
+                            <img src="images/rose4.jpg" alt="Rose, Lauren" class="speaker-img">
+                            <div class="card-body">
+                                <h3 class="card-title">Rose, Lauren</h3>
+                            </div>
+                        </div>
+                        <div class="card-back">
+                            <div class="card-body">
+                                <p class="card-text"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Speaker 11 -->
+                <div class="card flashcard" id="speaker11" onclick="flipCard('speaker11')">
+                    <div class="flip-card-inner">
+                        <div class="card-front">
+                            <img src="images/sagvari.png" alt="Sagvari, Bence" class="speaker-img">
+                            <div class="card-body">
+                                <h3 class="card-title">Sagvari, Bence</h3>
+                            </div>
+                        </div>
+                        <div class="card-back">
+                            <div class="card-body">
+                                <p class="card-text"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Speaker 12 -->
+                <div class="card flashcard" id="speaker12" onclick="flipCard('speaker12')">
+                    <div class="flip-card-inner">
+                        <div class="card-front">
+                            <img src="images/szemeredi.jpeg" alt="Szemredi, Endre" class="speaker-img">
+                            <div class="card-body">
+                                <h3 class="card-title">Szemeredi, Endre</h3>
+                            </div>
+                        </div>
+                        <div class="card-back">
+                            <div class="card-body">
+                                <p class="card-text"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Speaker 13 -->
+                <div class="card flashcard" id="speaker13" onclick="flipCard('speaker13')">
+                    <div class="flip-card-inner">
+                        <div class="card-front">
+                            <img src="images/paste.png" alt="Zádori, Iván" class="speaker-img">
+                            <div class="card-body">
+                                <h3 class="card-title">Zádori, Iván</h3>
+                            </div>
+                        </div>
+                        <div class="card-back">
+                            <div class="card-body">
+                                <p class="card-text">Iván Zádori is an economist, human manager, and associate professor. He received his PhD degree in 2009. Between 2000 and 2002, he worked as an economist in the OTP Bank in Pécs. In 2002 he started to work at the University of Pécs. From 2015, he is the vice dean of the Faculty of Cultural Sciences, Education and Regional Development, University of Pécs, and from 2021, he is the head of the Institute of Regional Development. His educational, teaching and research activities cover primarily topics related to regional development, sustainability and education. This research approach allows to examine the responses of economic actors, governmental organizations and institutions, which may generate new patterns within the framework of market coordination that can contribute to the development of more responsible practices and the development of more sustainable economic and social situations, assuming that sustainability patterns can be learned and contributed to the successful adaptation of communities and individuals as well.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <!-- Add more speakers in a similar structure -->
+            </div>
         </section>
 
+    </div>
 
-        
+    <script>
+        function flipCard(cardId) {
+            const card = document.getElementById(cardId);
+            card.classList.toggle('flipped');
+        }
+    </script>
+
+</body>
+</html>
